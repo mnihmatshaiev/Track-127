@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1D3A812680EDC20015B2F8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3A802680EDC20015B2F8 /* ScheduleViewController.swift */; };
+		4C1D3A832680EDFC0015B2F8 /* ScheduleDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3A822680EDFC0015B2F8 /* ScheduleDiffableDataSource.swift */; };
+		4C1D3A852680F1440015B2F8 /* FromCityScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3A842680F1440015B2F8 /* FromCityScheduleViewController.swift */; };
+		4C1D3A872680F2D70015B2F8 /* FromVillageScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3A862680F2D70015B2F8 /* FromVillageScheduleViewController.swift */; };
+		4C1D3A892680FEC10015B2F8 /* TimeDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3A882680FEC10015B2F8 /* TimeDependent.swift */; };
 		4C56151B26809A83004FA1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56151A26809A83004FA1C2 /* AppDelegate.swift */; };
 		4C56151D26809A83004FA1C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56151C26809A83004FA1C2 /* SceneDelegate.swift */; };
 		4C56151F26809A83004FA1C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56151E26809A83004FA1C2 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1D3A802680EDC20015B2F8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		4C1D3A822680EDFC0015B2F8 /* ScheduleDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDiffableDataSource.swift; sourceTree = "<group>"; };
+		4C1D3A842680F1440015B2F8 /* FromCityScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCityScheduleViewController.swift; sourceTree = "<group>"; };
+		4C1D3A862680F2D70015B2F8 /* FromVillageScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromVillageScheduleViewController.swift; sourceTree = "<group>"; };
+		4C1D3A882680FEC10015B2F8 /* TimeDependent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDependent.swift; sourceTree = "<group>"; };
 		4C56151726809A83004FA1C2 /* Track 127.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Track 127.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C56151A26809A83004FA1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C56151C26809A83004FA1C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1D3A7F2680ED8E0015B2F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C1D3A802680EDC20015B2F8 /* ScheduleViewController.swift */,
+				4C1D3A842680F1440015B2F8 /* FromCityScheduleViewController.swift */,
+				4C1D3A862680F2D70015B2F8 /* FromVillageScheduleViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		4C56150E26809A83004FA1C2 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +82,7 @@
 		4C56151926809A83004FA1C2 /* Track 127 */ = {
 			isa = PBXGroup;
 			children = (
+				4C1D3A7F2680ED8E0015B2F8 /* Controllers */,
 				4C5615332680A32F004FA1C2 /* Views */,
 				4C56152E26809A95004FA1C2 /* Model */,
 				4C56151A26809A83004FA1C2 /* AppDelegate.swift */,
@@ -80,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				4C5615362680AB24004FA1C2 /* Time.swift */,
+				4C1D3A822680EDFC0015B2F8 /* ScheduleDiffableDataSource.swift */,
+				4C1D3A882680FEC10015B2F8 /* TimeDependent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,12 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D3A832680EDFC0015B2F8 /* ScheduleDiffableDataSource.swift in Sources */,
 				4C5615372680AB24004FA1C2 /* Time.swift in Sources */,
 				4C56151F26809A83004FA1C2 /* ViewController.swift in Sources */,
+				4C1D3A892680FEC10015B2F8 /* TimeDependent.swift in Sources */,
 				4C56153226809DE9004FA1C2 /* DateExtension.swift in Sources */,
 				4C56151B26809A83004FA1C2 /* AppDelegate.swift in Sources */,
 				4C56151D26809A83004FA1C2 /* SceneDelegate.swift in Sources */,
+				4C1D3A812680EDC20015B2F8 /* ScheduleViewController.swift in Sources */,
 				4C5615352680A348004FA1C2 /* NextBusView.swift in Sources */,
+				4C1D3A872680F2D70015B2F8 /* FromVillageScheduleViewController.swift in Sources */,
+				4C1D3A852680F1440015B2F8 /* FromCityScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

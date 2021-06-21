@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eoy-dW-lEp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,35 +8,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nearest-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Track_127" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j1F-fS-yVQ" userLabel="Main stack">
-                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                                <rect key="frame" x="16" y="60" width="382" height="737"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nst-QM-b8T" userLabel="Frow city view" customClass="NextBusView" customModule="Track_127" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="368.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-Ak-uN9">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="393"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="368.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-k4-k29">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="78.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="73.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From where" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bD-c6-Uh1">
-                                                                <rect key="frame" x="0.0" y="26" width="305.5" height="26.5"/>
+                                                                <rect key="frame" x="0.0" y="23.5" width="305.5" height="26.5"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHR-zc-Mgn">
-                                                                <rect key="frame" x="305.5" y="26" width="76.5" height="26.5"/>
+                                                                <rect key="frame" x="305.5" y="23.5" width="76.5" height="26.5"/>
                                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                 <nil key="textColor"/>
@@ -48,7 +47,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 : 34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebA-yd-Xjc">
-                                                        <rect key="frame" x="0.0" y="78.5" width="382" height="314.5"/>
+                                                        <rect key="frame" x="0.0" y="73.5" width="382" height="295"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="80"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -73,22 +72,22 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-4G-Deu" userLabel="From village view" customClass="NextBusView" customModule="Track_127" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="393" width="382" height="393"/>
+                                        <rect key="frame" x="0.0" y="368.5" width="382" height="368.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bwi-Ju-mTA">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="393"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="368.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H64-gg-DYe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="78.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="73.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From where" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8U-Ol-HB8">
-                                                                <rect key="frame" x="0.0" y="26" width="305.5" height="26.5"/>
+                                                                <rect key="frame" x="0.0" y="23.5" width="305.5" height="26.5"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eim-bp-KNV">
-                                                                <rect key="frame" x="305.5" y="26" width="76.5" height="26.5"/>
+                                                                <rect key="frame" x="305.5" y="23.5" width="76.5" height="26.5"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                 <nil key="textColor"/>
@@ -100,7 +99,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 : 34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrq-QF-I6b">
-                                                        <rect key="frame" x="0.0" y="78.5" width="382" height="314.5"/>
+                                                        <rect key="frame" x="0.0" y="73.5" width="382" height="295"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="80"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -139,16 +138,169 @@
                             <constraint firstItem="j1F-fS-yVQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uki-5j-2oo"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Nearest" image="clock" catalog="system" selectedImage="clock.fill" id="QTf-ic-QsX"/>
                     <connections>
                         <outlet property="fromCityView" destination="Nst-QM-b8T" id="T2O-TQ-Cgy"/>
                         <outlet property="fromVillageView" destination="uYv-4G-Deu" id="CHT-5n-g36"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="100"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--Schedule for Village-->
+        <scene sceneID="Zb4-af-NIS">
+            <objects>
+                <tableViewController id="hfY-bb-p8S" customClass="FromVillageScheduleViewController" customModule="Track_127" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gBx-38-XRi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="hrY-vd-93w" detailTextLabel="Vwt-q4-FTv" style="IBUITableViewCellStyleValue1" id="OGS-x2-Vfl">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OGS-x2-Vfl" id="ZOS-Kn-Y1N">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hrY-vd-93w">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vwt-q4-FTv">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hfY-bb-p8S" id="CbJ-d8-KLM"/>
+                            <outlet property="delegate" destination="hfY-bb-p8S" id="doZ-Dh-N1g"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule for Village" id="xCt-Ib-ZBo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6K-Fe-Mms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.02898550724643" y="797.54464285714278"/>
+        </scene>
+        <!--Schedule for City-->
+        <scene sceneID="P8P-4v-pzp">
+            <objects>
+                <tableViewController id="sxl-xi-U5x" customClass="FromCityScheduleViewController" customModule="Track_127" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0WG-nv-0gb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ONC-qZ-UoR" detailTextLabel="Tgr-uJ-RKc" style="IBUITableViewCellStyleValue1" id="tEF-TS-a5d">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tEF-TS-a5d" id="QVF-wY-R37">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ONC-qZ-UoR">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tgr-uJ-RKc">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sxl-xi-U5x" id="FPL-zq-EPH"/>
+                            <outlet property="delegate" destination="sxl-xi-U5x" id="YVG-gi-5ng"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule for City" id="gsc-jn-2TO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0x-Os-be1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2491.304347826087" y="816.96428571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HoR-pd-Wzc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eoy-dW-lEp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyw-yw-ePs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1Ma-wE-2nq"/>
+                        <segue destination="x2L-QB-o2N" kind="relationship" relationship="viewControllers" id="LVJ-ut-6Qo"/>
+                        <segue destination="J8k-vT-K8P" kind="relationship" relationship="viewControllers" id="IKy-KF-IhD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uS3-Be-vW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+        <!--Village-->
+        <scene sceneID="K9K-b6-I2C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x2L-QB-o2N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Village" image="tablecells" catalog="system" selectedImage="tablecells.fill" id="ocV-tw-uW0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bu7-rq-MVb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hfY-bb-p8S" kind="relationship" relationship="rootViewController" id="ghs-H2-n9l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3e-LM-UxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468.11594202898556" y="797.54464285714278"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="jzX-5l-hgd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J8k-vT-K8P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="City" image="tablecells" catalog="system" selectedImage="tablecells.fill" id="AwW-7b-Tyx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N1z-w8-7Ja">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sxl-xi-U5x" kind="relationship" relationship="rootViewController" id="xqh-2x-1ob"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlr-nc-YFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.1594202898552" y="816.96428571428567"/>
         </scene>
     </scenes>
     <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="tablecells" catalog="system" width="128" height="93"/>
+        <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

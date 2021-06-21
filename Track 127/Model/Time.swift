@@ -170,3 +170,20 @@ struct TimeTables {
         Time(hours: 21, minutes: 40)
     ])
 }
+
+class TimeSyncer {
+    var delegates:[TimeDependent] = []
+    var timer: Timer?
+    func addDelegate(delegate: TimeDependent) {
+        delegates.append(delegate)
+    }
+    init() {
+        delegates = []
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            for delegate in self.delegates {
+                delegate.performOnTick()
+            }
+        }
+    }
+    static var shared = TimeSyncer()
+}

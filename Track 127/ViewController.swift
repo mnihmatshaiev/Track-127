@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TimeDependent {
     
     @IBOutlet weak var fromCityView: NextBusView!
     @IBOutlet weak var fromVillageView: NextBusView!
     
-    var timer: Timer?
-    var smth = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         fromCityView.timeTable = TimeTables.fromCityTable
@@ -22,15 +20,16 @@ class ViewController: UIViewController {
         fromVillageView.placeLabel.text = "From village"
         self.updateNextBus(view: &self.fromCityView)
         self.updateNextBus(view: &self.fromVillageView)
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
-            self.updateNextBus(view: &self.fromCityView)
-            self.updateNextBus(view: &self.fromVillageView)
-        })
+        TimeSyncer.shared.addDelegate(delegate: self)
     }
     
     func updateNextBus(view: inout NextBusView) {
         view.currentNext = view.timeTable.getCurrentNext()
     }
     
+    func performOnTick() {
+        self.updateNextBus(view: &self.fromCityView)
+        self.updateNextBus(view: &self.fromVillageView)
+    }
 }
 

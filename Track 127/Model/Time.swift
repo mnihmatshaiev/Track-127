@@ -7,7 +7,15 @@
 
 import Foundation
 
-class Time: CustomStringConvertible {
+class Time: CustomStringConvertible, Comparable {
+    static func < (lhs: Time, rhs: Time) -> Bool {
+        return lhs.timeFromDayBegining < rhs.timeFromDayBegining
+    }
+    
+    static func == (lhs: Time, rhs: Time) -> Bool {
+        return lhs.timeFromDayBegining == rhs.timeFromDayBegining
+    }
+    
     var description: String {
         let h = hours
         let m = minutes

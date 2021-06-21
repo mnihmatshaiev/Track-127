@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     (13, 55),
     (14, 35),
     (15, 15),
-    (16, 00),
+    (15, 50),
     (16, 40),
     (17, 10),
     (17, 45),
@@ -83,6 +83,7 @@ class ViewController: UIViewController {
         if let closestTime = closestTime {
             view.nextScheduledLabel.text = "\(closestTime.hours):\(String(closestTime.minutes).padding(toLength: 2, withPad: "0", startingAt: 0))"
             view.remainingTimeLabel.text = String(describing: timeToClosest)
+            view.remainingTimeLabel.backgroundColor = (timeToClosest < Time(hours: 0, minutes: 15)) ? .systemOrange : .systemGreen
         } else {
             view.nextScheduledLabel.text = "----"
             view.remainingTimeLabel.text = "----"

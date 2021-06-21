@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         fromVillageView.placeLabel.text = "From village"
         self.updateNextBus(view: &self.fromCityView)
         self.updateNextBus(view: &self.fromVillageView)
-        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             self.updateNextBus(view: &self.fromCityView)
             self.updateNextBus(view: &self.fromVillageView)
         })

@@ -33,7 +33,8 @@ class Time: CustomStringConvertible {
     }
     
     var minutes: Int {
-        return Int((timeFromDayBegining - Double(hours) * 3600.0) / 60)
+        let seconds = (Int((timeFromDayBegining - Double(hours) * 3600.0)) % 60)
+        return Int((timeFromDayBegining - Double(hours) * 3600.0) / 60) + (seconds == 0 ? 0 : 1)
     }
     
     static func -(lhs: Time, rhs: Time) -> Time {

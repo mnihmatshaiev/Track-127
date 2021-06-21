@@ -12,54 +12,54 @@ class ViewController: UIViewController {
     @IBOutlet weak var fromCityView: NextBusView!
     @IBOutlet weak var fromVillageView: NextBusView!
     
-    let fromCityTable = TimeTable(initialTableSimple: [
-    (5, 40),
-    (6, 20),
-    (7, 00),
-    (8, 25),
-    (9, 10),
-    (10, 00),
-    (10, 40),
-    (11, 15),
-    (12, 00),
-    (12, 35),
-    (13, 15),
-    (13, 55),
-    (14, 35),
-    (15, 15),
-    (15, 50),
-    (16, 40),
-    (17, 10),
-    (17, 45),
-    (18, 20),
-    (19, 00),
-    (20, 00),
-    (21, 00)
+    let fromCityTable = TimeTable(initialTable: [
+        Time(hours: 5, minutes: 40),
+        Time(hours: 6, minutes: 20),
+        Time(hours: 7, minutes: 00),
+        Time(hours: 8, minutes: 25),
+        Time(hours: 9, minutes: 10),
+        Time(hours: 10, minutes: 00),
+        Time(hours: 10, minutes: 40),
+        Time(hours: 11, minutes: 15),
+        Time(hours: 12, minutes: 00),
+        Time(hours: 12, minutes: 35),
+        Time(hours: 13, minutes: 15),
+        Time(hours: 13, minutes: 55),
+        Time(hours: 14, minutes: 35),
+        Time(hours: 15, minutes: 15),
+        Time(hours: 15, minutes: 50),
+        Time(hours: 16, minutes: 40),
+        Time(hours: 17, minutes: 10),
+        Time(hours: 17, minutes: 45),
+        Time(hours: 18, minutes: 20),
+        Time(hours: 19, minutes: 00),
+        Time(hours: 20, minutes: 00),
+        Time(hours: 21, minutes: 00)
     ])
     
-    let fromVillageTable = TimeTable(initialTableSimple: [
-    (6, 15),
-    (6, 50),
-    (7, 40),
-    (8, 20),
-    (9, 10),
-    (9, 55),
-    (10, 45),
-    (11, 35),
-    (12, 05),
-    (12, 45),
-    (13, 25),
-    (14, 10),
-    (14, 50),
-    (15, 25),
-    (16, 10),
-    (16, 50),
-    (17, 20),
-    (18, 00),
-    (19, 10),
-    (19, 50),
-    (20, 45),
-    (21, 40)
+    let fromVillageTable = TimeTable(initialTable: [
+        Time(hours: 6, minutes: 15),
+        Time(hours: 6, minutes: 50),
+        Time(hours: 7, minutes: 40),
+        Time(hours: 8, minutes: 20),
+        Time(hours: 9, minutes: 10),
+        Time(hours: 9, minutes: 55),
+        Time(hours: 10, minutes: 45),
+        Time(hours: 11, minutes: 35),
+        Time(hours: 12, minutes: 05),
+        Time(hours: 12, minutes: 45),
+        Time(hours: 13, minutes: 25),
+        Time(hours: 14, minutes: 10),
+        Time(hours: 14, minutes: 50),
+        Time(hours: 15, minutes: 25),
+        Time(hours: 16, minutes: 10),
+        Time(hours: 16, minutes: 50),
+        Time(hours: 17, minutes: 20),
+        Time(hours: 18, minutes: 00),
+        Time(hours: 19, minutes: 10),
+        Time(hours: 19, minutes: 50),
+        Time(hours: 20, minutes: 45),
+        Time(hours: 21, minutes: 40)
     ])
     
     var timer: Timer?
@@ -79,15 +79,7 @@ class ViewController: UIViewController {
     }
     
     func updateNextBus(view: inout NextBusView) {
-        let (closestTime, timeToClosest) = view.timeTable.getClosestFromNow()
-        if let closestTime = closestTime {
-            view.nextScheduledLabel.text = "\(closestTime.hours):\(String(closestTime.minutes).padding(toLength: 2, withPad: "0", startingAt: 0))"
-            view.remainingTimeLabel.text = String(describing: timeToClosest)
-            view.remainingTimeLabel.backgroundColor = (timeToClosest < Time(hours: 0, minutes: 15)) ? .systemOrange : .systemGreen
-        } else {
-            view.nextScheduledLabel.text = "----"
-            view.remainingTimeLabel.text = "----"
-        }
+        view.currentNext = view.timeTable.getCurrentNext()
     }
     
 }
